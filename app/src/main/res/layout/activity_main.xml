@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="hyxd.parentapp.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/blacke"/>
+
+        <RadioGroup
+            android:id="@+id/rg_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="消息"
+                android:textSize="12sp"
+                android:textColor="@color/select_text_bg"
+                android:drawableTop="@drawable/select_message_bg"
+                android:drawablePadding="3dp"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_class"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="选课"
+                android:textSize="12sp"
+                android:textColor="@color/select_text_bg"
+                android:drawableTop="@drawable/select_class_bg"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_study"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="学习"
+                android:textSize="12sp"
+                android:textColor="@color/select_text_bg"
+                android:drawableTop="@drawable/select_study_bg"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_serve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="服务"
+                android:textSize="12sp"
+                android:textColor="@color/select_text_bg"
+                android:drawableTop="@drawable/select_serve_bg"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的"
+                android:textSize="12sp"
+                android:textColor="@color/select_text_bg"
+                android:drawableTop="@drawable/select_my_bg"
+                android:drawablePadding="3dp"/>
+
+        </RadioGroup>
+
+
+
+</LinearLayout>

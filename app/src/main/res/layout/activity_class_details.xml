@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="hyxd.parentapp.activity.ClassDetailsActivity">
+
+
+    <include layout="@layout/head_toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blacke"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+
+        <hyxd.parentapp.view.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iv_teacher"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/text_size12"
+            android:textColor="@color/black9"
+            android:text="主讲老师:"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_tteacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/text_size12"
+            android:text="丁鹿燕"/>
+
+        <hyxd.parentapp.view.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iv_teacher"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_size12"
+            android:textColor="@color/black9"
+            android:text="辅导老师:"/>
+
+        <TextView
+            android:id="@+id/tv_bteacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/text_size12"
+            android:text="王向阳"/>
+
+    </LinearLayout>
+
+    <hyxd.parentapp.xorzlistview.xlistview.XListView
+        android:id="@+id/scheduling_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:divider="@null">
+    </hyxd.parentapp.xorzlistview.xlistview.XListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="暂无课程详情"/>
+
+
+</LinearLayout>

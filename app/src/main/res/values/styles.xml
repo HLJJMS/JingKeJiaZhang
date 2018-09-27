@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/BaseTheme">
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/blacke</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+
+    <style name="Scheduling_LV_TV_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size12</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black6</item>
+
+    </style>
+
+    <style name="feedback_star_iv">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

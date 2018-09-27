@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="hyxd.parentapp.activity.CheckAnalyActivity">
+
+    <include layout="@layout/head_toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blacke"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/iv_listview_bg">
+
+        <ImageView
+            android:id="@+id/iv_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无试卷分析"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        >
+
+        <hyxd.parentapp.view.CircleImageView
+            android:id="@+id/iv_main_teacher"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/iv_teacher"/>
+
+
+        <TextView
+            android:id="@+id/tv_main_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_main_teacher"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="丁鹿燕"/>
+
+
+        <TextView
+            android:id="@+id/tv_analy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_main_teacher"
+            android:layout_below="@id/tv_main_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#aabbcc"
+            android:padding="10dp"
+            android:text="2018小学英语基础班第一次从期末测试题,试卷整体难度适中，试卷做的不错，百分之八十的题目回答的完全正确，百分之十四的题目一般正确，只有百分之六的题目完全错误。整体答题情况很好。"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

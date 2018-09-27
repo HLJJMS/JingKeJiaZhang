@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="hyxd.parentapp.activity.LoginActivity">
+
+    <include layout="@layout/head_toolbar"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/blacke"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black3"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_et_bg"
+        android:hint="请输入手机号，注册完成自动生成账号"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColorHint="@color/blackc"
+        android:textColor="@color/black3" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/et_mesg"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_et_bg"
+            android:hint="输入验证码"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/blackc"
+            android:textColor="@color/black3" />
+
+
+        <TextView
+            android:id="@+id/tv_get_mesg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="获取验证码"
+            android:textSize="16sp"
+            android:background="@drawable/shape_tv_bg"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#99c73a"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置密码"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black3"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_et_bg"
+        android:hint="请输入密码"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:password="true"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/blackc"
+        android:textColor="@color/black3" />
+
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="确    认"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_shadow_bt_bg1"/>
+
+
+</LinearLayout>

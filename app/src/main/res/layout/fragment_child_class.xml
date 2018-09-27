@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_class_type"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_no_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="未结课"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/select_text_bg" />
+
+
+        <RadioButton
+            android:id="@+id/rb_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已结课"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/select_text_bg" />
+
+    </RadioGroup>
+
+    <hyxd.parentapp.xorzlistview.xlistview.XListView
+        android:id="@+id/scheduling_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:divider="@null">
+    </hyxd.parentapp.xorzlistview.xlistview.XListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="暂无课程信息"/>
+
+
+
+
+
+
+</LinearLayout>
